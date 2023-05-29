@@ -1,0 +1,142 @@
+#div {
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+.color1 {
+  width: 30%;
+  height: 50px;
+  background-color: black;
+}
+.color3 {
+  width: 30%;
+  height: 50px;
+  background-color: red;
+}
+.color2 {
+  width: 30%;
+  height: 50px;
+  background-color: green;
+}
+
+@media only screen and (max-width: 600px){
+  body{
+    background-color: red;
+  }
+
+  
+}
+@media only screen and (max-width: 400px){
+  body{
+    background-color: black;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+.logo a {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+#list {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu li {
+  margin: 0 10px;
+}
+
+.menu li a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.toggle {
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  #list {
+    display: none;
+  }
+
+  .toggle {
+    display: block;
+  }
+
+  .toggle i {
+    font-size: 28px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+    background-color: #333;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .menu li {
+    margin: 10px 0;
+  }
+
+  .menu li a {
+    font-size: 24px;
+    color: #fff;
+  }
+
+  .show-menu {
+    opacity: 1;
+    visibility: visible;
+  }
+}
